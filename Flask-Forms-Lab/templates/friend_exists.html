@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+		h1 {color:  pink}
+		h3 {color: pink}
+		
+	</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,6 +14,12 @@
 
 </head>
 <body>
+	<h1>{{name}}</h1>
+	{% if name in friends %}
+		<h3>True </h3>
+	{% else %}
+		<h3> I have pets! My pets are: </h3>
+	{% endif %}
 
 
 

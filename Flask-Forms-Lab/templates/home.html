@@ -12,11 +12,12 @@
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-    {% for i in friends %}
-        <a href="/friends_exists/{{i}}">
+    {% for i in friend %}
+        <a href="/friend_exists/{{i}}">
         <h3> {{i}} </h3>
         </a>
     {% endfor %}
+    
 </ul>
 
 <script>
